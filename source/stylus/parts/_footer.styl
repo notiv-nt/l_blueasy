@@ -1,0 +1,39 @@
+
+
+.main-footer
+	background-color $bg-color
+	color #515f67
+	font-size _em(12px)
+	padding 75px 0
+
+	nav
+		text-transform uppercase
+		font-weight 600
+		float left
+
+		a
+			display inline-block
+			padding 1px 13px
+			line-height 1.2
+			color inherit
+			position relative
+			_transition color
+
+			&:hover
+				color lighten(#515f67, 20%)
+
+			&:last-of-type
+				&:after
+					display none
+
+			&:after
+				content ''
+				position absolute
+				right 0
+				bottom 0
+				top 0
+				width 1px
+				background-color #4a575f
+
+	.copyright
+		float right

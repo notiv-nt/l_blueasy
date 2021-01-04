@@ -1,0 +1,72 @@
+
+
+.portfolio
+	$color = #515f67
+
+	color $color
+	padding-bottom 44px !important
+
+	.box-header
+		@extend .clearfix
+
+	h2.divider
+		float left
+
+		&:after
+			background-color $color
+
+	.tags
+		float right
+
+	.items
+		margin 0 -15px
+		padding 20px 0
+
+	.item
+		padding 15px
+		display none
+
+		&:hover
+			.overlay
+				opacity 1
+
+	.overlay
+		position absolute
+		top 0
+		bottom 0
+		left 0
+		right 0
+		z-index 2
+		opacity 0
+		background-color rgba($bg-color, .9)
+		_transition opacity
+
+		a
+			display block
+			color #fff
+			font-size 72px
+			text-align center
+			font-weight 300
+			line-height 1
+			width 100%
+			height @width
+
+		span
+			display block
+			width 72px
+			height @width
+			position absolute
+			top 0
+			bottom 0
+			left 0
+			right 0
+			margin auto
+
+
+	// for overlay
+	.item-inner
+		position relative
+
+
+
+

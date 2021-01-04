@@ -1,0 +1,114 @@
+
+
+html
+	font $main-font-size/$line-height 'Open Sans', sans-serif
+
+
+h2
+	font-size _em(30px)
+	font-weight 300
+	line-height 1.2
+	color inherit
+	text-transform uppercase
+
+
+.main-box
+	padding 73px 0
+
+
+h2.divider
+	line-height 1.1
+
+	_divider(#fff, 5px, 45px)
+
+
+.box-header
+	margin-bottom 40px
+
+
+.tags
+	margin 0
+	padding 10px 0 0
+	margin-right -20px
+
+	button
+		background none
+		outline none
+		border none
+		display inline-block
+		color inherit
+		font-weight 700
+		border 2px solid transparent
+		text-transform uppercase
+		padding 1px 18px
+		margin 0 1px
+		cursor pointer
+		_transition border-color, color
+
+		&.active, &:hover
+			border-color $main-color
+			color $main-color
+
+
+.btn
+	$color = #353f46
+
+	display inline-block
+	color $color
+	font-weight 700
+	text-transform uppercase
+	border 2px solid transparent
+	padding 9px 39px
+
+	&-outlined
+		border-color $color
+		_transition color, border-color
+
+		&:hover
+			color #fff
+			border-color #fff
+
+	&-theme
+		background-color $main-color
+		color #fff
+		_transition color, background-color
+
+		&:hover
+			background-color darken($main-color, 10%)
+
+
+.padded-right
+	padding-right 90px
+
+.padded-left
+	padding-left 90px
+
+
+.socials
+	margin -8px
+
+	a
+		width 64px
+		height 64px
+		display inline-block
+		margin 6px 8px
+		border 2px solid #fff
+		text-align center
+		line-height @width - 10%
+		vertical-align middle
+		_transition border-color, color
+
+		&:hover
+			color $main-color
+			border-color $main-color
+
+			.icon
+				fill $main-color
+
+		.icon
+			display inline-block
+			vertical-align middle
+			width 30px
+			height @width
+			fill #fff
+			_transition fill

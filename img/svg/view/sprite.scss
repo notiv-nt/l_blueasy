@@ -1,0 +1,54 @@
+%svg-common {
+	background: url("svg/sprite.view.svg") no-repeat;
+}
+
+.svg-coffee {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-coffee-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-dribbble {
+	@extend %svg-common;
+	background-position: 50% 0;
+}
+
+.svg-dribbble-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-google {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-google-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-quotes {
+	@extend %svg-common;
+	background-position: 50% 100%;
+}
+
+.svg-quotes-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-twitter {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-twitter-dims {
+	width: 52px;
+	height: 52px;
+}
+

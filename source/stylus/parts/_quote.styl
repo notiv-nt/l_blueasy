@@ -1,0 +1,54 @@
+
+
+.quote-section
+	background-color #fff
+
+	&.twitter
+		background-color $main-color
+		color #fff
+
+	&.testimonials
+		background-color #fff
+		color #515f67
+
+		h2.divider:after
+			background-color #515f67
+
+		.box-header
+			.icon
+				fill #515f67
+
+	.box-header
+		@extend .clearfix
+
+		margin-bottom 20px
+
+		h2.divider
+			float left
+
+		.icon
+			float right
+			width 30px
+			height 30px
+			fill #fff
+
+	.content
+		a
+			font-weight 400
+
+			&:hover
+				text-decoration underline
+
+		blockquote
+			font-size _em(28px)
+			font-weight 300
+			margin 0
+			padding 0
+			line-height 1.8
+
+		.quote-author
+			color $main-color
+			padding-top 25px
+
+			a
+				font-weight 700

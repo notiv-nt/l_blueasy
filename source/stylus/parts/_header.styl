@@ -1,0 +1,50 @@
+
+
+.main-header
+	background-color rgba($bg-color, .85)
+	padding 58px 0
+	position absolute
+	top 0
+	left 0
+	width 100%
+	z-index 3
+	color #fff
+
+	&.fixed
+		position fixed
+		padding 28px 0
+		_transition padding
+
+	.toggle-nav
+		_toggle()
+
+		display none
+		margin -6px 0
+
+	.col
+		vertical-align middle
+
+	.logo
+		display inline-block
+
+
+.main-nav
+	text-align right
+
+	a
+		display inline-block
+		color inherit
+		font-weight 700
+		border 2px solid transparent
+		text-transform uppercase
+		padding 4px 18px
+		margin 0 1px
+		_transition border-color, color
+
+		&:last-of-type
+			margin-right -20px
+
+		&.active, &:hover
+			border-color $main-color
+			color $main-color
+
